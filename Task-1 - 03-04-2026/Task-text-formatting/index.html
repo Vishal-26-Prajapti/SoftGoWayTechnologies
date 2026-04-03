@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TaskTextFormatting</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="text-container">
+            <div id="editor" contenteditable="true"></div>
+        </div>
+
+        <div class="controls">
+            <label>Font Size:</label>
+            <input type="range" id="fontSize" min="10" max="50" value="16">
+
+            <label>Font color: </label>
+            <input type="color" id="fontColor" value="#000000">
+
+            <label>Font Family:</label>
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+
+            <button onclick="bullet()">Bullet</button>
+            <button onclick="bold()"><b>B</b></button>
+            <button onclick="italic()"><i>I</i></button>
+            <button onclick="underline()"><u>U</u></button>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+
+</html>

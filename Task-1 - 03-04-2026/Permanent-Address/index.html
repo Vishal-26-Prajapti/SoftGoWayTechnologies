@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Address</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h2>Copy Permanent Address to Local Address</h2>
+
+        <div class="address">
+
+            <fieldset class="permanent-address">
+
+                <legend>Permanent Address</legend>
+
+                <div class="row">
+                    <label for="p_addr1">Address line 1</label>
+                    <input type="text" id="p_addr1">
+                    <label for="p_addr2">Address line 2</label>
+                    <input type="text" id="p_addr2">
+                </div>
+
+                <div class="row">
+                    <label for="p_city">City</label>
+                    <input type="text" id="p_city">
+                    <label for="p_state">State</label>
+                    <input type="text" id="p_state">
+                </div>
+
+                <div class="row">
+                    <label for="p_pincode">Pin Code</label>
+                    <input type="text" id="p_pincode">
+                    <label for="p_country">Country</label>
+                    <input type="text" id="p_country">
+                </div>
+
+            </fieldset>
+
+            <fieldset class="local-address">
+
+                <legend>Local Address</legend>
+
+                <label style="font-weight: bold;">
+                    Same As Permanent Address
+                    <input type="checkbox" onclick="copyAddress(this)">
+                </label>
+
+                <div class="row">
+                    <label for="l_addr1">Address line 1</label>
+                    <input type="text" id="l_addr1">
+                    <label for="l_addr2">Address line 2</label>
+                    <input type="text" id="l_addr2">
+                </div>
+
+                <div class="row">
+                    <label for="l_city">City</label>
+                    <input type="text" id="l_city">
+                    <label for="l_state">State</label>
+                    <input type="text" id="l_state">
+                </div>
+
+                <div class="row">
+                    <label for="l_pincode">Pin Code</label>
+                    <input type="text" id="l_pincode">
+                    <label for="l_country">Country</label>
+                    <input type="text" id="l_country">
+                </div>
+
+            </fieldset>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
