@@ -1,4 +1,3 @@
-// About toggle
 const aboutBtn = document.getElementById("aboutBtn");
 const moreText = document.getElementById("moreText");
 
@@ -6,7 +5,6 @@ aboutBtn.addEventListener("click", () => {
   moreText.classList.toggle("hidden");
 });
 
-// Theme toggle
 const themeBtn = document.getElementById("themeBtn");
 
 themeBtn.addEventListener("click", () => {
